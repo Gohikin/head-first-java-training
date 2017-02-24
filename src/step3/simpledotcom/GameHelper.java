@@ -1,4 +1,4 @@
-package methods;
+package step3.simpledotcom;
 
 import java.io.BufferedReader;
 import java.io.IOException;

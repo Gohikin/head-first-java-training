@@ -1,4 +1,4 @@
-package methods;
+package step3.simpledotcom;
 
 /**
  * Created by wuhaijing on 2017/2/24.
