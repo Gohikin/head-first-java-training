@@ -10,15 +10,21 @@ package methods;
  */
 public class SimpleDotComTestDrive {
     public static void main(String[] args) {
+        int numOfGuesses = 0;
+        GameHelper gameHelper = new GameHelper();
+        int randomNum = (int) (Math.random() * 5);
         SimpleDotCom simpleDotCom = new SimpleDotCom();
-        int[] locations = {2, 3, 4};
+        int[] locations = {randomNum, randomNum + 1, randomNum + 2};
         simpleDotCom.setLocationCells(locations);
-        String userGuess = "5";
-        String result = simpleDotCom.checkYourself(userGuess);
-        String testResult = "failed";
-        if (result.equals("hit")) {
-            testResult = "Passed";
+        boolean isAlive = true;
+        while (isAlive) {
+            String userGuess = gameHelper.getUserInput("Enter a number");
+            String result = simpleDotCom.checkYourself(userGuess);
+            numOfGuesses++;
+            if (result.equals("kill")) {
+                isAlive = false;
+                System.out.println("You took " + numOfGuesses + " guesses!");
+            }
         }
-        System.out.println(testResult);
     }
 }
