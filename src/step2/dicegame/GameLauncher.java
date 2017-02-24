@@ -1,4 +1,4 @@
-package object;
+package step2.dicegame;
 
 /**
  * Created by wuhaijing on 2017/2/23.

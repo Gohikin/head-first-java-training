@@ -1,4 +1,4 @@
-package object;
+package step2.dicegame;
 
 import java.util.ArrayList;
 import java.util.List;
