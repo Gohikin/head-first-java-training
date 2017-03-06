@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Created by wuhaijing on 2017/2/24.
  */
-public class DotCom {
+public class DotComBust {
     //    private int[] locationCells;
     private List<String> locationCells;
 
